@@ -9,6 +9,7 @@ public class Producto {
     private double precio; 
     private int stock; 
 
+    // Constructor
     public Producto(int id, String nombre, String descripcion, double precio, int stock) {
         this.id = id;
         this.nombre = nombre;
@@ -18,51 +19,32 @@ public class Producto {
     }
 
     // Getters
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
 
-    public String getNombre() {
-        return nombre;
-    }
+    public String getNombre() { return nombre; }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
+    public String getDescripcion() { return descripcion; }
 
-    public double getPrecio() {
-        return precio;
-    }
+    public double getPrecio() { return precio; }
 
-    public int getStock() {
-        return stock;
-    }
+    public int getStock() { return stock; }
 
     // Setters
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id; }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
+    public void setPrecio(double precio) { this.precio = precio; }
 
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
+    public void setStock(int stock) { this.stock = stock; }
 
     // Método para actualizar el precio del producto 
-    public void actualizarPrecio(double nuevoPrecio) { 
-        this.precio = nuevoPrecio; 
-    } 
+    public void actualizarPrecio(double nuevoPrecio) { this.precio = nuevoPrecio; }
+    
+    // Método para actualizar el stock del producto
+    public void actualizarStock(int nuevoStock) { this.stock = nuevoStock; }
 
     // Método para descripción detallada del producto 
     @Override
